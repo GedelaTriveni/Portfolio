@@ -1,0 +1,828 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #222;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 10%;
+    background: transparent;
+    transition: all ease .45s;
+}
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logo span {
+    color: gold;
+}
+
+.navbar {
+    display: flex;
+}
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar a {
+    font-size: larger;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 20px;
+    transition: all ease .30s;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+.navbar a:active {
+    color: gold;
+}
+
+section {
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.home-img {
+    width: 600px;
+    height: 600px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-text span {
+    padding: 5px;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.home-text h1 {
+    font-size: 40px;
+    margin: 25px 0;
+    color: #fff;
+}
+
+.home-text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: gold;
+    color: #fff;
+    border: 2px solid gold;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: gold;
+}
+
+.two {
+    background: #141414;
+    border: 2px solid #141414;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.two:hover {
+    color: #141414;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+
+.about {
+    width: 100%;
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 50%;
+    margin-top: 500px 0px;
+    padding: 80px 0px;
+}
+
+.about-text {
+    width: 400px;
+    margin: 40px 150px;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 70px;
+
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-text h3 {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.about-text h3 span {
+    color: gold;
+}
+
+.about-text h5 {
+    color: gold;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+button {
+    display: inline-block;
+    padding: 14px 34px;
+    background: gold;
+    color: #fff;
+    border: 2px solid gold;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: gold;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust as needed */
+    padding: 20px;
+}
+
+.phone h2 {
+    color: gold;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.email h2 {
+    color: gold;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.phone,
+.email {
+    text-align: center;
+}
+
+.phone p,
+.email p {
+    margin: 0 25px;
+}
+
+.phone h2,
+.email h2 {
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(18, 22, 24);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(205, 216, 221);
+    transition: 1s;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 40px -10px #000000;
+}
+
+.default-text,
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.7s ease;
+}
+
+.default-text {
+    opacity: 1;
+    width: 100%;
+}
+
+.hover-text {
+    opacity: 0;
+    color: white;
+    background-color: #809fa2;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    transition: 1.3s;
+}
+
+.card:hover .default-text {
+    opacity: 0;
+}
+
+.card:hover .hover-text {
+    opacity: 1;
+}
+
+
+.java-container {
+    background: #ede7e7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    transition: 1s;
+}
+
+.java {
+    animation: loading 5s normal forwards;
+    box-shadow: 0 10px 40px -10px gold;
+    border-radius: 100px;
+    background: gold;
+    height: 30px;
+    text-align: right;
+    padding: 1px 10px 1px 0px;
+    width: 100%;
+    color: #000000;
+
+}
+
+.java-container:hover {
+    width: 80%;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(161, 159, 159);
+}
+
+@keyframes loading {
+    0% {
+        width: 50;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.python-container {
+    background: #ede7e7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+
+    transition: 1s;
+}
+
+.python {
+    animation: loader 5s normal forwards;
+    box-shadow: 0 10px 40px -10px gold;
+    border-radius: 100px;
+    background: gold;
+    height: 30px;
+    text-align: right;
+    padding: 1px 10px 1px 0px;
+    width: 100%;
+    color: #000000;
+
+}
+
+.python-container:hover {
+    width: 80%;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(161, 159, 159);
+}
+
+@keyframes loader {
+    0% {
+        width: 50;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.html-container {
+    background: #ede7e7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    transition: 1s;
+
+}
+
+.html {
+    animation: loadeed 5s normal forwards;
+    box-shadow: 0 10px 40px -10px gold;
+    border-radius: 100px;
+    background: gold;
+    height: 30px;
+    text-align: right;
+    width: 100%;
+    padding: 1px 10px 1px 0px;
+    color: #000000;
+
+}
+
+.html-container:hover {
+    width: 80%;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(161, 159, 159);
+}
+
+@keyframes loadeed {
+    0% {
+        width: 50;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.sales-container {
+    background: #ede7e7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+
+    transition: 1s;
+}
+
+.sales {
+    animation: load 5s normal forwards;
+    box-shadow: 0 10px 40px -10px gold;
+    border-radius: 100px;
+    background: gold;
+    height: 30px;
+    text-align: right;
+    padding: 1px 10px 1px 0px;
+    width: 100%;
+    color: #000000;
+
+}
+
+.sales-container:hover {
+    width: 80%;
+    text-align: right;
+    transition: 1s;
+    background-color: rgb(161, 159, 159);
+}
+
+@keyframes load {
+    0% {
+        width: 50;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+#Skills h1:hover {
+    color: rgb(232, 193, 193);
+}
+
+.certification-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#c1 {
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px #222;
+    text-align: center;
+}
+
+#c1:hover {
+    transition: 1s;
+}
+
+#c2 {
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px #222;
+    text-align: center;
+}
+
+#c2:hover {
+    transition: 1s;
+}
+
+#c3 {
+    transition: 1s;
+}
+
+#c3 {
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px #222;
+    text-align: center;
+}
+
+#javanptel {
+    color: #222;
+}
+
+#javanptel:hover {
+    color: rgb(255, 255, 255);
+}
+
+#pythonskillup {
+    color: #222;
+}
+
+#pythonskillup:hover {
+    color: rgb(255, 255, 255);
+}
+
+#cybersecurity {
+    color: #222;
+}
+
+#cybersecurity:hover {
+    color: rgb(255, 255, 255);
+}
+
+.cer1 {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transition: 1.5s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+}
+
+.cer1:hover {
+    color: rgb(255, 255, 255);
+    height: 276.8px;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cer2 {
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    transition: 1.5s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+}
+
+.cer2:hover {
+    height: 220px;
+    height: 276.8px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.cer3 {
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    transition: 1.5s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+}
+
+.cer3:hover {
+    height: 276.8px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+    #projects{
+      padding-top: 80px;
+    }
+   
+    #pro1{
+        border-radius: 20px;
+        transition: 1s;
+        box-shadow: 0px 10px 40px -13px rgb(245, 247, 248);
+        text-align: center;
+      }
+      
+         #pro2{
+          border-radius: 20px;
+          transition: 1s;
+          box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+          text-align: center;
+        }
+     
+           #pro3{
+            border-radius: 20px;
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center;
+          }
+          
+  .proj1{
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+  }
+  .proj1:hover{
+            color: rgb(255, 255, 255); 
+            height:276.8px;
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center;  
+  }
+  .proj2{
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+  }
+  .proj2:hover{
+    color: rgb(31, 32, 111); 
+            height:220px;
+            height:276.8px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center; 
+  }
+  .proj3{
+    background-color: rgb(204, 204, 207); 
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+  }
+  .proj3:hover{
+    color: rgb(31, 32, 111); 
+    height:276.8px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center;
+  }
+  #Uname{
+    border-radius: 10px;
+    border-bottom-color: black;
+    border-right-color: black;
+    padding: 5px 5px 5px 5px;
+  }
+  #Uname:hover{
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    border-top-color:gray;
+  }
+  #email{
+    border-radius: 10px;
+    border-bottom-color: black;
+    border-right-color: black;
+    padding: 5px 5px 5px 5px;
+  }
+  #email:hover{
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    border-top-color:gray;
+  }
+  #number{
+    border-radius: 10px;
+    border-bottom-color: black;
+    border-right-color: black;
+    padding: 5px 5px 5px 5px;
+  }
+  #number:hover{
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    border-top-color:gray;
+  }
+  
+  #message{
+    border-radius: 10px;
+    border-color:black;
+    padding: 5px 5px 5px 5px; 
+    transition: 0.2s;
+  }
+  #message:hover{
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+  }
+  #submit{
+    border-radius: 10px;
+    border-color:black;
+    padding: 5px 20px 5px 20px; 
+    box-shadow: 0 0 5px black;
+    background-color: gold;
+    font-size:  16px;
+  }
+  #submit:hover{
+    border-radius: 8px;
+    border-color:gold;
+    box-shadow: 0 0 5px black;
+    background-color:black;
+    color: white;
+  }
+  .service-container{
+    display: flex;
+    justify-content: space-around;
+  }
+    #services{
+      padding-top: 80px;
+      padding-bottom: 300px;
+    }
+    #service1{
+        border-radius: 20px;
+        transition: 1s;
+        box-shadow: 0px 10px 40px -13px rgb(245, 247, 248);
+        text-align: center;
+        
+      }
+         #service2{
+          border-radius: 20px;
+          transition: 1s;
+          box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+          text-align: center;
+        }
+  .service1{
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+  }
+  .service1:hover{
+            color: rgb(255, 255, 255); 
+            height:276.8px;
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center;
+
+  }
+  .service2{
+    background-color: rgb(204, 204, 207);
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 15px 40px -13px rgb(57, 47, 47);
+  }
+  .service2:hover{
+    color: rgb(31, 32, 111); 
+            height:220px;
+            height:276.8px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            transition: 1s;
+            box-shadow: 0px 10px 40px -13px rgb(255, 255, 255);
+            text-align: center;
+    
+  }
+  #services h1:hover{
+    color:rgb(232, 193, 193); 
+  }
+  footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.social-icon{
+    display: flex;
+}
+.social-icon a{
+    width: 90px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    border-radius: 50%;
+    margin: 100px 10px;
+    color: gold;
+    text-decoration: none;
+    font-size: 100px;
+}
+.social a:hover{
+    transform:scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #fff;
+    bottom: 20px;
+    font-size: 30px;
+}
